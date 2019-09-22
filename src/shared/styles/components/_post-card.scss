@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the PostCard component.
+// -----------------------------------------------------------------------------
+
+.postCard {
+    width: '18rem';
+
+    & > img {
+        height: 180px;
+        width: 100%;
+        display: block;
+    }
+}
