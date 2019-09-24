@@ -16,7 +16,7 @@ const RecipesList = (props: ISmartProps) => {
   //   props.handleDataSelection(selectedOptionInfo, stepNumber)
   // }
   useEffect(() => {
-    RecipesService.getRecipes().subscribe(recipes => console.log('subscripe recipes',recipes));
+    RecipesService.getRecipes().subscribe(recipes => console.log('subscribe recipes', recipes));
   })
 
   return (

@@ -1,6 +1,6 @@
-export default interface ISys {
-    type: string;
-    id: string;	
+import IApiSysBase from "./ApiSysBase";
+
+export default interface IApiSys extends IApiSysBase {
     // space:  Link;
     // contentType: Link;
     revision: number;	

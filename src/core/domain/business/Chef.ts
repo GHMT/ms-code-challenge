@@ -4,25 +4,25 @@
  * Take a look also to the same pattern in React (do not use like this anyway): https://sendgrid.com/blog/using-the-adapter-design-pattern-with-react/
  */
 
+import { Entry } from 'contentful';
 import IAdapter from '../adapter';
 
 export interface IChef {
-  readonly id: string;
-  readonly name: string;
+  readonly name?: string;
 }
 
 export class Chef {
-    readonly id: string;
-    readonly name: string;
+    readonly id: Entry<IChef>['sys']['id'];  
+    readonly name?: string;
 
-  constructor(chef: IChef) {
-    this.id = chef.id;
-    this.name = chef.name;
+  constructor(chef: Entry<IChef>) {
+    this.id = chef.sys.id;
+    this.name = chef.fields.name;
   }
 }
 
-export class ChefAdapter implements IAdapter<Chef> {
-  adapt(item: IChef): Chef {
+class ChefAdapter implements IAdapter<Chef> {
+  adapt(item: Entry<IChef>): Chef {
     return new Chef(item);
   }
 }

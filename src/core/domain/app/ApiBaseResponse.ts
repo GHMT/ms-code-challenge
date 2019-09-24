@@ -1,5 +1,5 @@
-import ISys from "./ApiSys";
+import IApiSys from "./ApiSys";
 
 export default interface IApiBaseResponse {
-    readonly sys: ISys; 
+    readonly sys: IApiSys; 
 }
