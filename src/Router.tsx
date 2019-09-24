@@ -5,17 +5,19 @@
  * has its own router. Otherwise, the main Parking component will not be rendered
  * and thus neither will its sub-module.
  */
-import React, { ReactElement } from 'react';
+import React, { ReactElement, Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { ROUTES } from './router-config';
 
 const Router = (): ReactElement => (
   <BrowserRouter>
-    <Switch>
-      {/* <Route exact path={ROUTES.NotFoundPage.path} component={ROUTES.NotFoundPage.component} /> */}
-      <Route path={ROUTES.Home.path} component={ROUTES.Home.component} />
-    </Switch>
+  <Suspense fallback={<div>Loading...</div>}>
+      <Switch>
+        {/* <Route exact path={ROUTES.NotFoundPage.path} component={ROUTES.NotFoundPage.component} /> */}
+        <Route path={ROUTES.Home.path} component={ROUTES.Home.component} />
+      </Switch>
+    </Suspense>
   </BrowserRouter>
 )
 

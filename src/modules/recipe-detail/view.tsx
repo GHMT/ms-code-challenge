@@ -10,7 +10,7 @@ const View = (props: IDummyProps) => (
   <React.Fragment>
     <div className='row mb-3 go-back'>
       <Link to='/recipes'>
-        <FontAwesomeIcon className='text-dark float-left' icon="arrow-alt-circle-left" style={{ fontSize: '2em', cursor: 'pointer'}} />
+        <FontAwesomeIcon className='text-info float-left' icon="arrow-alt-circle-left" style={{ fontSize: '2em', cursor: 'pointer'}} />
       </Link>
     </div>
     {props.recipe && <RecipeDetailCard
