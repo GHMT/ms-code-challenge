@@ -1,12 +1,12 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the PostCard component.
+// This file contains all styles related to the RecipeCard component.
 // -----------------------------------------------------------------------------
 
-.postCard {
+.recipeCard {
     width: '18rem';
 
     & > img {
-        height: 180px;
+        height: 160px;
         width: 100%;
         display: block;
     }

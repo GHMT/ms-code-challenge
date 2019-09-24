@@ -1,6 +1,7 @@
 import { RouteComponentProps } from 'react-router';
 
 import { IMatchParamProp } from '../../shared/types/Routing/Routes';
+import { Recipe } from '../../core/domain/business/Recipe';
 
 // Dummy and Smart shared props
 type ISharedProps = ISharedOwnProps & ISharedExternalProps & IStateToProps;
@@ -31,6 +32,6 @@ interface ISmartOwnStateToDummyProps {}
 export type IDummyProps = IDummyOwnProps & ISmartOwnStateToDummyProps & ISharedProps & IHandlers;
 
 interface IDummyOwnProps {
-    recipeId: string;
+    recipe: Recipe | null;
 } // Props needed only by the dummy component
 export interface IHandlers {} // Types for event handlings

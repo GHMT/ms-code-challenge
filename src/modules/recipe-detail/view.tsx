@@ -1,9 +1,17 @@
 import React from 'react';
+
 import { IDummyProps } from './types';
+import RecipeDetailCard from '../../shared/components/recipe-detail-card';
+import DEFAULT_RECIPE_IMG from '../../assets/default-recipe-img.png';
 
 const View = (props: IDummyProps) => (
   <React.Fragment>
-    <h1 className="mb-5 mt-5">{`Recipe ID ${props.recipeId} Detail working!`}</h1>
+    {props.recipe && <RecipeDetailCard 
+      img={props.recipe.photo ? `${props.recipe.photo.url}?fit=fill&w=1200&h=380` : DEFAULT_RECIPE_IMG}
+      title={props.recipe.title ? props.recipe.title : ''}
+      description={props.recipe.description ? props.recipe.description : ''}
+      chefName={props.recipe.chef ? props.recipe.chef.name : undefined}
+      tags={props.recipe.tags}/>}
   </React.Fragment>
 )
 

@@ -1,8 +1,8 @@
 import { RouteComponentProps } from 'react-router';
 
 import { IMatchParamProp } from '../../shared/types/Routing/Routes';
-// import { Post } from '../../core/domain/business/Post';
-// import { IPostCardProps } from '../../shared/components/post-card';
+import { Recipe } from '../../core/domain/business/Recipe';
+import { IRecipeCardProps } from '../../shared/components/recipe-card/types';
 
 // Dummy and Smart shared props
 type ISharedProps = ISharedOwnProps & ISharedExternalProps & IStateToProps;
@@ -23,16 +23,17 @@ export interface IPostListMatchParams extends IMatchParamProp {}
 // export type IDispatchToPropsMap = (dispatch: Dispatch) => IDispatchersToProps;
 
 interface ISmartOwnState {}
-interface ISmartOwnStateToDummyProps {
-    // posts: Post[];
-}
+interface ISmartOwnStateToDummyProps {}
 // export type IStateToPropsMap = (state: IAppStore) => IStateToProps;
 
 
 // Dummy Component types
 export type IDummyProps = IDummyOwnProps & ISmartOwnStateToDummyProps & ISharedProps & IHandlers;
 
-interface IDummyOwnProps {} // Props needed only by the dummy component
+interface IDummyOwnProps {
+    recipes: Recipe[];
+} // Props needed only by the dummy component
+
 export interface IHandlers {
-    // onViewClick: IPostCardProps['onViewClick'];
+    onRecipeClick: IRecipeCardProps['onRecipeClick'];
 } // Types for event handlings

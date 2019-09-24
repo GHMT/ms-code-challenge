@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router';
 
 import {
   ISmartProps,
 } from './types';
 import View from './view';
+import { Recipe } from '../../core/domain/business/Recipe';
+import RecipesService from '../../core/api/services/recipes/service';
 
 const RecipeDetail = (props: ISmartProps) => {
-  // const { steps } = props;
-  // const [currentStep, setCurrentStep] = useState(0); /* useEffect(() => { props.handleDataSelection(selectedOption, currentStep ? currentStep - 1 : currentStep) }, [currentStep, selectedOption]); */
+  const [recipe, setRecipe] = useState<Recipe | null>(null);
 
-  // const handleDataSelection = (selectedOptionInfo: FirstArgument<ISmartProps['handleDataSelection']>, stepNumber: number) => {
-  //   setCurrentStep(stepNumber + 1);
-  //   props.handleDataSelection(selectedOptionInfo, stepNumber)
-  // }
+  useEffect(() => {
+    const getRecipeSubscription = RecipesService.getRecipe(props.match.params.recipeId).subscribe(recipe => setRecipe(recipe));
+
+    return () => getRecipeSubscription.unsubscribe();
+  }, []);
+
 
   return (
     <View 
-      {...props}
-      recipeId={props.match.params.recipeId}
-    />
+      recipe={recipe}/>
   );
 }
 
