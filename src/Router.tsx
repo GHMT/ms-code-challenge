@@ -14,8 +14,8 @@ const Router = (): ReactElement => (
   <BrowserRouter>
   <Suspense fallback={<div>Loading...</div>}>
       <Switch>
-        {/* <Route exact path={ROUTES.NotFoundPage.path} component={ROUTES.NotFoundPage.component} /> */}
         <Route path={ROUTES.Home.path} component={ROUTES.Home.component} />
+        {/* <Route exact path={ROUTES.NotFoundPage.path} component={ROUTES.NotFoundPage.component} /> */}
       </Switch>
     </Suspense>
   </BrowserRouter>
