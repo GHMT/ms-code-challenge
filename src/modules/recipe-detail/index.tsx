@@ -17,9 +17,8 @@ const RecipeDetail = (props: ISmartProps) => {
     return () => getRecipeSubscription.unsubscribe();
   }, []);
 
-
   return (
-    <View 
+    <View
       recipe={recipe}/>
   );
 }

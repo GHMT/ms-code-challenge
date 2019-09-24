@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are the base for all pages.
+// -----------------------------------------------------------------------------
+
+.go-back {
+    @media(max-width: map-get($grid-breakpoints, "md")) {
+        display: none;
+    }
+}

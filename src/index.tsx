@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
-import './styles/main.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import IconLibrary, { Icons } from './shared/icons';
+
+import './index.css';
+import './styles/main.scss';
+
+IconLibrary.add(...Icons);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
