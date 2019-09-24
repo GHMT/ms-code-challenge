@@ -4,10 +4,14 @@
 
 .recipeCard {
     width: '18rem';
+    cursor: pointer;
 
     & > img {
         height: 160px;
         width: 100%;
         display: block;
+    }
+    & > .card-body {
+        height: 124px;
     }
 }

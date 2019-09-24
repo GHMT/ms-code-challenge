@@ -19,6 +19,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.2",
+    "react-truncate": "^2.4.0",
     "rxjs": "^6.5.3",
     "typescript": "3.6.3"
   },
@@ -47,6 +48,7 @@
     "@types/react-bootstrap": "^0.32.19",
     "@types/react-router": "^5.0.5",
     "@types/react-router-dom": "^4.3.5",
+    "@types/react-truncate": "^2.3.3",
     "node-sass": "^4.12.0"
   }
 }
