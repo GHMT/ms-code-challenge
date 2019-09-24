@@ -2,26 +2,27 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 
 import companyLogo from '../../../logo.svg';
+import { IAppHeaderProps } from './types';
 
-export interface IAppHeaderProps {
-    logo?: string;
-    companyName?: string;
-}
-
-const AppHeader = ({ logo = companyLogo, companyName = 'Marley Spoon FE Test' }: IAppHeaderProps) => (
+const AppHeader = ({ logo = companyLogo, companyName = 'Front-End Test' }: IAppHeaderProps) => (
     <React.Fragment>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="info" variant="dark" sticky='top'>
             <Navbar.Brand>
                 <img
                     alt=""
                     src={logo}
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
+                    // width="30"
+                    // height="24"
+                    className='d-inline-block mr-3'
                 />
-                {companyName}
             </Navbar.Brand>
             <div className="col" />
+                {companyName &&
+                <div className="row">
+                    <Navbar.Text className="col justify-content-end">
+                        <div className='text-white'>{companyName}</div>    
+                    </Navbar.Text>
+                </div>}
         </Navbar>
     </React.Fragment>
 );

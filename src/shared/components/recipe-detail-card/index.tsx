@@ -6,7 +6,7 @@ import { IRecipeDetailCard } from './types';
 
 const RecipeDetailCard = (props: IRecipeDetailCard) => (
   <React.Fragment>
-    <Card>
+    <Card border='dark'>
       <Card.Header><h2>{props.title}</h2></Card.Header>
       <Card.Img variant="top" src={props.img}/>
       <Card.Body>
