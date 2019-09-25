@@ -20,7 +20,6 @@ const RecipesList = (props: ISmartProps) => {
   }, []);
 
   const onRecipeClickHandler = (recipeId: FirstArgument<IDummyProps['onRecipeClick']>) => {
-    console.log('clicked recipe', recipeId);
     props.history.push(`recipe-detail/${recipeId}`)
   }
 
