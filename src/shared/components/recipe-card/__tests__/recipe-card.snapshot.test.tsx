@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import RecipeCard from '..';
 
 describe('Recipe Card Component snapshots', () => {
-  it('renders with text', () => {
+  it('match snapshot', () => {
     const RecipeCardShallowed = shallow(
         <RecipeCard
             id='abc123'

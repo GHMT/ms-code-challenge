@@ -16,7 +16,9 @@ exports[`Recipe Detail Card Component snapshots match snapshot: all props 1`] = 
       variant="top"
     />
     <CardBody>
-      <CardText>
+      <div
+        className="card-text"
+      >
         <ReactMarkdown
           astPlugins={Array []}
           escapeHtml={true}
@@ -30,7 +32,7 @@ exports[`Recipe Detail Card Component snapshots match snapshot: all props 1`] = 
           sourcePos={false}
           transformLinkUri={[Function]}
         />
-      </CardText>
+      </div>
       <footer
         className="blockquote-footer"
       >
@@ -86,7 +88,9 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no chef & no tag
       variant="top"
     />
     <CardBody>
-      <CardText>
+      <div
+        className="card-text"
+      >
         <ReactMarkdown
           astPlugins={Array []}
           escapeHtml={true}
@@ -100,7 +104,7 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no chef & no tag
           sourcePos={false}
           transformLinkUri={[Function]}
         />
-      </CardText>
+      </div>
     </CardBody>
   </Card>
 </Fragment>
@@ -122,7 +126,9 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no chef 1`] = `
       variant="top"
     />
     <CardBody>
-      <CardText>
+      <div
+        className="card-text"
+      >
         <ReactMarkdown
           astPlugins={Array []}
           escapeHtml={true}
@@ -136,7 +142,7 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no chef 1`] = `
           sourcePos={false}
           transformLinkUri={[Function]}
         />
-      </CardText>
+      </div>
     </CardBody>
     <CardFooter
       className="text-muted"
@@ -178,7 +184,9 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no tags 1`] = `
       variant="top"
     />
     <CardBody>
-      <CardText>
+      <div
+        className="card-text"
+      >
         <ReactMarkdown
           astPlugins={Array []}
           escapeHtml={true}
@@ -192,7 +200,7 @@ exports[`Recipe Detail Card Component snapshots match snapshot: no tags 1`] = `
           sourcePos={false}
           transformLinkUri={[Function]}
         />
-      </CardText>
+      </div>
       <footer
         className="blockquote-footer"
       >

@@ -10,11 +10,11 @@ const RecipeDetailCard = (props: IRecipeDetailCard) => (
       <Card.Header><h2>{props.title}</h2></Card.Header>
       <Card.Img variant="top" src={props.img}/>
       <Card.Body>
-        <Card.Text>
+        <div className='card-text'>
           <ReactMarkdown 
             source={props.description}
             linkTarget='_blank'/>
-        </Card.Text>
+        </div>
         {props.chefName && (
           <footer className="blockquote-footer">
             <small className="text-muted">

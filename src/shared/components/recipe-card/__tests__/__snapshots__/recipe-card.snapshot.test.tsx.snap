@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recipe Card Component snapshots renders with text 1`] = `
+exports[`Recipe Card Component snapshots match snapshot 1`] = `
 <Fragment>
   <Card
     body={false}

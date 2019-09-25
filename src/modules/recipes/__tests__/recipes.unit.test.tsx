@@ -9,7 +9,6 @@ import RecipesList from '..';
 import { Recipe } from '../../../core/domain/business/Recipe';
 
 
-
 jest.mock('../../../core/api/services/recipes/service');
 
 const mockedRecipeService = RecipeService as jest.Mocked<IRecipesService>
@@ -32,15 +31,6 @@ describe('Recipes List module', () => {
     });
     
     describe('Logic', () => {
-        // beforeEach(() => {
-        //     mockedRecipeService.getRecipes.mockImplementation(() => of(mockedRecipes));
-        //     RecipesListMounted = mount(
-        //         <MemoryRouter>
-        //             <RecipesList />
-        //         </MemoryRouter>
-        //     );
-        // });
-        
         afterEach(() => {
             RecipesListMounted.unmount();
         });
