@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe Detail Card Component snapshots match snapshot: all props 1`] = `
+<Fragment>
+  <Card
+    body={false}
+    border="dark"
+  >
+    <CardHeader>
+      <h2>
+        Dummy Title
+      </h2>
+    </CardHeader>
+    <CardImg
+      src=""
+      variant="top"
+    />
+    <CardBody>
+      <CardText>
+        <ReactMarkdown
+          astPlugins={Array []}
+          escapeHtml={true}
+          linkTarget="_blank"
+          parserOptions={Object {}}
+          plugins={Array []}
+          rawSourcePos={false}
+          renderers={Object {}}
+          skipHtml={false}
+          source="A very short description"
+          sourcePos={false}
+          transformLinkUri={[Function]}
+        />
+      </CardText>
+      <footer
+        className="blockquote-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          by 
+          <cite
+            title="Mark Zuchiniberg"
+          >
+            Mark Zuchiniberg
+          </cite>
+        </small>
+      </footer>
+    </CardBody>
+    <CardFooter
+      className="text-muted"
+    >
+      <Badge
+        className="mx-1 my-1 float-left"
+        key="1"
+        pill={false}
+        variant="info"
+      >
+        healthy
+      </Badge>
+      <Badge
+        className="mx-1 my-1 float-left"
+        key="2"
+        pill={false}
+        variant="info"
+      >
+        gluten free
+      </Badge>
+    </CardFooter>
+  </Card>
+</Fragment>
+`;
+
+exports[`Recipe Detail Card Component snapshots match snapshot: no chef & no tags 1`] = `
+<Fragment>
+  <Card
+    body={false}
+    border="dark"
+  >
+    <CardHeader>
+      <h2>
+        Dummy Title
+      </h2>
+    </CardHeader>
+    <CardImg
+      src=""
+      variant="top"
+    />
+    <CardBody>
+      <CardText>
+        <ReactMarkdown
+          astPlugins={Array []}
+          escapeHtml={true}
+          linkTarget="_blank"
+          parserOptions={Object {}}
+          plugins={Array []}
+          rawSourcePos={false}
+          renderers={Object {}}
+          skipHtml={false}
+          source="A very short description"
+          sourcePos={false}
+          transformLinkUri={[Function]}
+        />
+      </CardText>
+    </CardBody>
+  </Card>
+</Fragment>
+`;
+
+exports[`Recipe Detail Card Component snapshots match snapshot: no chef 1`] = `
+<Fragment>
+  <Card
+    body={false}
+    border="dark"
+  >
+    <CardHeader>
+      <h2>
+        Dummy Title
+      </h2>
+    </CardHeader>
+    <CardImg
+      src=""
+      variant="top"
+    />
+    <CardBody>
+      <CardText>
+        <ReactMarkdown
+          astPlugins={Array []}
+          escapeHtml={true}
+          linkTarget="_blank"
+          parserOptions={Object {}}
+          plugins={Array []}
+          rawSourcePos={false}
+          renderers={Object {}}
+          skipHtml={false}
+          source="A very short description"
+          sourcePos={false}
+          transformLinkUri={[Function]}
+        />
+      </CardText>
+    </CardBody>
+    <CardFooter
+      className="text-muted"
+    >
+      <Badge
+        className="mx-1 my-1 float-left"
+        key="1"
+        pill={false}
+        variant="info"
+      >
+        healthy
+      </Badge>
+      <Badge
+        className="mx-1 my-1 float-left"
+        key="2"
+        pill={false}
+        variant="info"
+      >
+        gluten free
+      </Badge>
+    </CardFooter>
+  </Card>
+</Fragment>
+`;
+
+exports[`Recipe Detail Card Component snapshots match snapshot: no tags 1`] = `
+<Fragment>
+  <Card
+    body={false}
+    border="dark"
+  >
+    <CardHeader>
+      <h2>
+        Dummy Title
+      </h2>
+    </CardHeader>
+    <CardImg
+      src=""
+      variant="top"
+    />
+    <CardBody>
+      <CardText>
+        <ReactMarkdown
+          astPlugins={Array []}
+          escapeHtml={true}
+          linkTarget="_blank"
+          parserOptions={Object {}}
+          plugins={Array []}
+          rawSourcePos={false}
+          renderers={Object {}}
+          skipHtml={false}
+          source="A very short description"
+          sourcePos={false}
+          transformLinkUri={[Function]}
+        />
+      </CardText>
+      <footer
+        className="blockquote-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          by 
+          <cite
+            title="Mark Zuchiniberg"
+          >
+            Mark Zuchiniberg
+          </cite>
+        </small>
+      </footer>
+    </CardBody>
+  </Card>
+</Fragment>
+`;

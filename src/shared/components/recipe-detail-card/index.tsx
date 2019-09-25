@@ -25,7 +25,7 @@ const RecipeDetailCard = (props: IRecipeDetailCard) => (
       </Card.Body>
       {props.tags && props.tags.length && (
         <Card.Footer className="text-muted">
-          {props.tags.map(tag => <Badge className='mx-1 my-1 float-left' variant='info'>{tag.name}</Badge>)}
+          {props.tags.map(tag => <Badge className='mx-1 my-1 float-left' variant='info' key={tag.id}>{tag.name}</Badge>)}
         </Card.Footer>
       )}
     </Card>

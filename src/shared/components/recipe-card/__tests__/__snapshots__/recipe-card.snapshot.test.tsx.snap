@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe Card Component snapshots renders with text 1`] = `
+<Fragment>
+  <Card
+    body={false}
+    border="dark"
+    className="recipeCard"
+    onClick={[Function]}
+  >
+    <CardBody>
+      <CardTitle>
+        <Truncate
+          ellipsis={
+            <span>
+              ...
+            </span>
+          }
+          lines={3}
+          trimWhitespace={false}
+          width={0}
+        >
+          Dummy Title
+        </Truncate>
+      </CardTitle>
+    </CardBody>
+    <CardImg
+      src=""
+      variant="bottom"
+    />
+  </Card>
+</Fragment>
+`;
