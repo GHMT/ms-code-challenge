@@ -19,7 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *  No existing route validation (redirect to home)
 *  Recipe description markdown-like text parsed to html text
 
-## Out of scope (for lack of time)
+## Out of scope (due to lack of time)
 
 *  Error handling module for expected and unexpected exceptions in app and API calls
 *  Infinite loading on recipes list
