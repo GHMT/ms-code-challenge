@@ -1,3 +1,5 @@
+**NOTE:** *there are 2 contributors shown (GHMT and matomase). Both are me from different laptops and github users.*
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Production-ready architecture and building considerations
