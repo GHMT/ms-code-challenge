@@ -1,5 +1,32 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Production-ready architectural and building considerations
+
+*  Typescript for less error prone code
+*  Code splitting & lazy load in route modules
+*  sass & [7-1 pattern architecture](https://sass-guidelin.es/#the-7-1-pattern)
+*  Unit + snapshot tests with Jest & Enzyme (+90% coverage)
+*  Modules, domain and service layer separation of concerns for code scalability
+*  [Model-adapter pattern](https://dev.to/florimondmanca/consuming-apis-in-angular--the-model-adapter-pattern-3fk5) in service layer for API-to-APP objects transformation (with some personal enhancements like adding an interface and specific typings)
+*  Build ready for targeting different browsers and versions (through [browserlist](https://github.com/browserslist/browserslist) + [postcss](https://postcss.org/) & [babel](https://babeljs.io/))
+
+## Other considerations
+
+*  contentful.js SDK for Contentful Content Delivery API interacction (leveraging client=side entry links resolution)
+*  Responsiveness through bootstrap classes
+*  No existing route validation (redirect to home)
+*  Recipe description markdown-like text parsed to html text
+
+## Out of scope (for lack of time)
+
+*  Error handling module for expected and unexpected exceptions in app and API calls
+*  Infinite loading on recipes list
+*  Load default image on recipes until real image request finishes
+*  Enhancements on image resizing during viewport changes
+*  Integration & e2e tests
+*  Back-end mock with [json-server](https://github.com/typicode/json-server) (very important feature to avoid back-end dependency during front-end development time)
+* More exhaustive unit tests considering more deep use cases
+
 ## Available Scripts
 
 In the project directory, you can run:
