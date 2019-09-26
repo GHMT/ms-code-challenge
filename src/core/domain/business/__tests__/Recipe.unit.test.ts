@@ -1,5 +1,5 @@
 import { Recipe, RecipeAdapterSingleton} from '../Recipe';
-import { iRecipeEntry } from './mocks';
+import { iRecipeEntry } from '../__mocks__/contentful-entries';
 
 describe('Rcipe entity', () => {
     it('creates a Recipe class instance of an IRecipe interface', () => {
@@ -16,7 +16,7 @@ describe('Rcipe entity', () => {
     });
 
     it('creates a Recipe class instance of an IRecipe interface with no chef, tags and photo', () => {
-        const partialIRecipeEntry = {
+        const partialIRecipeEntry: typeof iRecipeEntry = {
             ...iRecipeEntry,
             fields: {
                 ...iRecipeEntry.fields,

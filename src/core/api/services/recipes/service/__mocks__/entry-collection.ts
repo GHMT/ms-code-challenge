@@ -1,8 +1,8 @@
-import { Entry, Asset } from 'contentful';
+import { Entry, Asset, EntryCollection } from 'contentful';
 
-import { IChef } from '../Chef';
-import { ITag } from '../Tag';
-import { IRecipe } from '../Recipe';
+import { IChef } from '../../../../../domain/business/Chef';
+import { ITag } from '../../../../../domain/business/Tag';
+import { IRecipe } from '../../../../../domain/business/Recipe';
 
 export const iChefEntry: Entry<IChef> = {
     sys: {
@@ -105,6 +105,11 @@ export const iRecipeEntry: Entry<IRecipe> = {
     update: () => new Promise<Entry<IRecipe>>(() => {})
 };
 
-xit('Do not delete this excluded test!!', () => {
-
-})
+export const iRecipeEntryCollection: EntryCollection<IRecipe> = {
+    total: 1,
+    skip: 0,
+    limit: 100,
+    items: [iRecipeEntry],
+    toPlainObject: () => ({}), 
+    stringifySafe: () => '',
+};

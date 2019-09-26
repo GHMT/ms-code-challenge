@@ -1,5 +1,5 @@
 import { Chef, ChefAdapterSingleton} from '../Chef';
-import { iChefEntry } from './mocks';
+import { iChefEntry } from '../__mocks__/contentful-entries';
 
 describe('Chef entity', () => {
     it('creates a Chef class instance of an IChef interface', () => {

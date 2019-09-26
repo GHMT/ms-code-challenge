@@ -1,5 +1,5 @@
 import { Photo, PhotoAdapterSingleton} from '../Photo';
-import { iPhotoAsset } from './mocks';
+import { iPhotoAsset } from '../__mocks__/contentful-entries';
 
 describe('Photo entity', () => {
     it('creates a Photo class instance of an IPhoto interface', () => {

@@ -60,7 +60,8 @@
   "jest": {
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/serviceWorker.ts",
-      "<rootDir>/src/index.tsx"
+      "<rootDir>/src/index.tsx",
+      "<rootDir>/src/core/domain/adapter.ts"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
