@@ -34,7 +34,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Run instructions
 
-**NOTE:** Be sure to have installed node in your environment. At the time of developing this app I am using node version 10.16.3.
+**NOTE:** be sure to have installed node in your environment. At the time of developing this app I am using node version 10.16.3.
 
 1. `npm install`
 2. `npm start`
