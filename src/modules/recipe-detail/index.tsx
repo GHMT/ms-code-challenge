@@ -15,7 +15,7 @@ const RecipeDetail = (props: ISmartProps) => {
     const getRecipeSubscription = RecipesService.getRecipe(props.match.params.recipeId).subscribe(recipe => setRecipe(recipe));
 
     return () => getRecipeSubscription.unsubscribe();
-  }, []);
+  }, [props.match.params.recipeId]);
 
   return (
     <View
