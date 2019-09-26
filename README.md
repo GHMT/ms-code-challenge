@@ -29,6 +29,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *  Back-end mock with [json-server](https://github.com/typicode/json-server) (very important feature to avoid back-end dependency during front-end development time)
 * More exhaustive unit tests considering more deep use cases
 
+## Run instructions
+
+1. `npm install`
+2. `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
