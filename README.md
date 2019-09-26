@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Production-ready architectural and building considerations
+## Production-ready architecture and building considerations
 
 *  Typescript for less error prone code
 *  Code splitting & lazy load in route modules
