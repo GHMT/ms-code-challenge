@@ -19,6 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *  contentful.js SDK for Contentful Content Delivery API interacction (leveraging client-side entry links resolution)
 *  Responsiveness through [Bootstrap](https://getbootstrap.com/)
 *  No existing route validation (redirect to home)
+*  Recipe detail resolution support by writting id on route (useful for users to share recipes by copying the web address)
 *  Recipe description markdown-like text parsed to html text
 
 ## Out of scope (due to lack of time)
