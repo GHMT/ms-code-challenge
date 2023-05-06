@@ -18,7 +18,7 @@
     "react-markdown": "^4.2.2",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.2",
+    "react-scripts": "5.0.1",
     "react-truncate": "^2.4.0",
     "rxjs": "^6.5.3",
     "typescript": "3.6.3"
